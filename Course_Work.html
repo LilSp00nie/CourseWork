@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" property='stylesheet' href= "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" property='stylesheet' href="css/visual.css"/>
+  <link rel="shortcut icon" property='shortcut icon' href="images/logo.png"/>
+  <link rel="stylesheet" property='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Paradise Theater</title>
+</head>
+<body>
+  <header>
+  <nav id="navbar">
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="logo"/>
+    </a>
+    <ul class="menu">
+        <li><a href="Course_Work.html">Home</a></li>
+        <li><a href="Movies.html">Movies</a></li>
+        <li><a href="Tv_Shows.html">Tv Shows</a></li>
+        <li><a href="About_Us.html">About Us</a></li>
+    </ul>
+    <form class="example" action="action_page.php">
+      <input type="text" placeholder="Find Your Favourite Movie..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+<!--SignUp Button-->
+<button class="SignUpButton" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal2">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content2" action="/action_page.php">
+    <div class="container2">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="Fname"><b>First Name</b></label>
+      <input id="Fname" type="text" placeholder="Enter Your First Name" name="Fname" required>
+      <label for="Lname"><b>Last Name</b></label>
+      <input id="Lname" type="text" placeholder="Enter Your Last Name" name="Lname" required>
+      <label for="uname"><b>Username</b></label>
+      <input id="uname" type="text" placeholder="Enter Your Username" name="uname" required>
+      <label for="email"><b>Email</b></label>
+      <input id="email" type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="PassEntry">
+            Password
+        <input id="PassEntry" type="password" placeholder="Type your password" class="form-controlPasswordInput">
+        <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+        <br>
+      </label>
+        <br>
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input id="psw-repeat" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a target="_blank" href="https://denislv-ivn-privacy.l.notice.studio/" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
+        <button type="submit" class="SignUpButton">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<!--LogIn Button-->
+<button class="LoginButton" onclick="document.getElementById('id01').style.display='flex'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="username"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="username" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input id="psw" type="password" placeholder="Enter Password" name="psw" required>
+        
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+      <br>
+      <button class="LoginButton" type="submit">Login</button>
+    </div> 
+
+    <div class="container" style="background-color:#950740">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"><a href="#">Forgot password?</a></span>
+    </div>
+  </form>
+</div>
+<!--TicketButton--><!--TicketButton--><!--TicketButton--><!--TicketButton--><!--TicketButton--><!--TicketButton--><!--TicketButton--><!--TicketButton-->
+<a class="TicketButton" target="_blank" href="https://form.jotform.com/223083917016352"><i class="fas fa-ticket-alt"></i> TICKETS</a>
+</nav>
+<div class="content-container">
+  <div class="featured-content" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('images/background2.jpg')">
+    <div class="centered">
+      <h1>Welcome, to Paradise Teathre!</h1>
+      <p>The site where you can find your favourite movies and more!</p>
+    </div> 
+  </div>
+</div>
+</header>
+<!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets--><!--Tickets-->
+<div class="footer-container">
+  <div class="footer">
+    <div class="footer-heading footer-1">
+        <h2>About</h2>
+        <a target="_blank" href="https://denislv-ivn-terms.l.notice.studio/">Terms of Service</a>
+    </div>
+    <div class="footer-heading footer-2">
+      <h2>Contact Us</h2>
+      <a href="#">Personal Contact - denislv.ivn@gmail.com</a>
+      <a href="#">Telephone - 089 124 8243</a>
+      <a href="#">Email - Paradise_Theatre@gmail.com</a>
+    </div>
+    <div class="footer-heading footer-3">
+      <h2>Social Media</h2>
+      <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+      <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+      <a target="_blank" href="https://www.youtube.com/">YouTube</a>
+      <a target="_blank" href="https://twitter.com/">Twitter</a>
+  </div>
+    <div class="footer-email-form">
+      <h2>Join Our Newsletter</h2>
+      <input type="email" placeholder="Enter your email address" id="footer-email">
+      <input type="submit" value="Sign Up" id="footer-email-btn">
+    </div>
+  </div>
+</div>
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-90px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("nav");
+if (x.className === "nav") {
+  x.className += " responsive";
+} else {
+  x.className = "nav";
+}
+}
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+var modal = document.getElementById('id02');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!--Password Checker-->
+<script>
+// timeout before a callback is called
+
+let timeout;
+
+// traversing the DOM and getting the input and span using their IDs
+
+let password = document.getElementById('PassEntry')
+let strengthBadge = document.getElementById('StrengthDisp')
+
+// The strong and weak password Regex pattern checker
+
+let strongPassword = new RegExp('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})')
+let mediumPassword = new RegExp('((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{6,}))|((?=.*[a-z])(?=.*[A-Z])(?=.*[^A-Za-z0-9])(?=.{8,}))')
+
+function StrengthChecker(PasswordParameter){
+    // We then change the badge's color and text based on the password strength
+
+    if(strongPassword.test(PasswordParameter)) {
+        strengthBadge.style.backgroundColor = "green"
+        strengthBadge.textContent = 'Strong'
+    } else if(mediumPassword.test(PasswordParameter)){
+        strengthBadge.style.backgroundColor = 'blue'
+        strengthBadge.textContent = 'Medium'
+    } else{
+        strengthBadge.style.backgroundColor = 'red'
+        strengthBadge.textContent = 'Weak'
+    }
+}
+
+// Adding an input event listener when a user types to the  password input 
+
+password.addEventListener("input", () => {
+
+    //The badge is hidden by default, so we show it
+
+    strengthBadge.style.display= 'block'
+    clearTimeout(timeout);
+
+    //We then call the StrengChecker function as a callback then pass the typed password to it
+
+    timeout = setTimeout(() => StrengthChecker(password.value), 500);
+
+    //Incase a user clears the text, the badge is hidden again
+
+    if(password.value.length !== 0){
+        strengthBadge.style.display != 'block'
+    } else{
+        strengthBadge.style.display = 'none'
+    }
+});
+</script>
+</body>
+</html>
